@@ -21,24 +21,27 @@
         android:layout_below="@+id/timerSeekBar"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="23dp"
+        android:onClick="stopAlarm"
         app:srcCompat="@drawable/egg" />
 
-    <EditText
-        android:id="@+id/timerEditText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/imageView"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="169dp"
-        android:ems="10"
-        android:inputType="time" />
-
     <Button
-        android:id="@+id/startAndStop"
+        android:id="@+id/startAndStopButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/imageView"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="75dp"
-        android:onClick="startAndStop" />
+        android:onClick="startAndStop"
+        android:text="Go!" />
+
+    <TextView
+        android:id="@+id/timerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/startAndStopButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="37dp"
+        android:text="0:30"
+        android:textSize="70sp" />
+
 </android.widget.RelativeLayout>
